@@ -1,0 +1,415 @@
+[
+  {
+    "product_id": "1882",
+    "name": "Confetti Cake & Cupcake Mix",
+    "url": "https://shop.kingarthurbaking.com/items/confetti-cake-cupcake-mix",
+    "price": "6.95",
+    "rating": "0",
+    "review_count": "0",
+    "categories": [
+      "Mixes",
+      "Mixes/Cake & Pie",
+      "Collections/Summer Baking",
+      "Collections/Cake Made Easy",
+      "Collections/New Products",
+      "Collections/Baking with Kids"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1882/9958/400331__78554.1777641602.jpg?c=1"
+  },
+  {
+    "product_id": "1883",
+    "name": "Confetti Sugar Cookie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/confetti-sugar-cookie-mix",
+    "price": "6.95",
+    "rating": "5",
+    "review_count": "1",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Collections/Cookie Creativity",
+      "Mixes/Cookies & Bars",
+      "Collections/New Products",
+      "Collections/Baking with Kids"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1883/9959/400333__15588.1777641659.png?c=1"
+  },
+  {
+    "product_id": "1943",
+    "name": "Gluten-Free Double Chocolate Chip Cookie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/gluten-free-double-chocolate-chip-cookie-mix",
+    "price": "8.95",
+    "rating": "5",
+    "review_count": "1",
+    "categories": [
+      "Mixes",
+      "Mixes/Cookies & Bars",
+      "Gluten-Free",
+      "Mixes/Gluten-Free",
+      "Gluten-Free/Gluten-Free Mixes",
+      "Collections/New Products"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1943/9960/400259__83433.1777641707.jpg?c=1"
+  },
+  {
+    "product_id": "1944",
+    "name": "Gluten-Free Roll & Bun Mix",
+    "url": "https://shop.kingarthurbaking.com/items/gluten-free-roll-bun-mix",
+    "price": "8.95",
+    "rating": "5",
+    "review_count": "3",
+    "categories": [
+      "Mixes",
+      "Mixes/Bread",
+      "Gluten-Free",
+      "Mixes/Gluten-Free",
+      "Gluten-Free/Gluten-Free Mixes",
+      "Collections/New Products"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1944/9922/400284_1__31457.1777311722.jpg?c=1"
+  },
+  {
+    "product_id": "1941",
+    "name": "Coffee Cake Mix",
+    "url": "https://shop.kingarthurbaking.com/items/coffee-cake-mix",
+    "price": "8.95",
+    "rating": "4.9",
+    "review_count": "30",
+    "categories": [
+      "Mixes",
+      "Mixes/Cake & Pie",
+      "Collections/Celebrate Breakfast",
+      "Collections/New Products",
+      "Mixes/Muffins & Quick Bread",
+      "select/Mix & Match Mixes",
+      "Collections/Mother's Day"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1941/9740/CoffeeCake_34_022326__95202.1771860526.jpg?c=1"
+  },
+  {
+    "product_id": "1939",
+    "name": "Banana Bread Mix",
+    "url": "https://shop.kingarthurbaking.com/items/banana-bread-mix",
+    "price": "7.95",
+    "rating": "4.4",
+    "review_count": "11",
+    "categories": [
+      "Mixes",
+      "Mixes/Bread",
+      "Mixes/Seasonal",
+      "Collections/Celebrate Breakfast",
+      "Collections/New Products",
+      "Mixes/Muffins & Quick Bread"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1939/9741/400392_Banana_Bread__44392.1771860667.jpg?c=1"
+  },
+  {
+    "product_id": "1756",
+    "name": "Butterscotch Blondie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/butterscotch-blondie-mix",
+    "price": "8.95",
+    "rating": "4.7",
+    "review_count": "97",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Cookies & Bars",
+      "Mixes/Seasonal",
+      "Collections/New Products",
+      "Collections/Valentine's Day",
+      "Collections/Baking with Kids",
+      "select/2 for $16 Cookies"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1756/9223/214100M401A_214101_ButterscotchBlondieMix_0225_34_1__80238.1755268735.jpg?c=1"
+  },
+  {
+    "product_id": "1517",
+    "name": "Pull-Apart Garlic Bread Mix Kit",
+    "url": "https://shop.kingarthurbaking.com/items/pull-apart-garlic-bread-mix-kit",
+    "price": "7.95",
+    "rating": "4.3",
+    "review_count": "285",
+    "categories": [
+      "Mixes",
+      "Mixes/Bread",
+      "Mixes/Specialty",
+      "Mixes/Bread Mix Kits"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1517/5718/213186__80216.1724079468.jpg?c=1"
+  },
+  {
+    "product_id": "1830",
+    "name": "Classic Chewy Bagel Mix Kit",
+    "url": "https://shop.kingarthurbaking.com/items/classic-chewy-bagel-mix-kit",
+    "price": "9.95",
+    "rating": "4.6",
+    "review_count": "50",
+    "categories": [
+      "Mixes",
+      "Mixes/Bread",
+      "Collections/Celebrate Breakfast",
+      "Collections/Blissful Bagels",
+      "Collections/Mother's Day",
+      "Mixes/Bread Mix Kits"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1830/9422/1_FOP__16232.1760106605.jpg?c=1"
+  },
+  {
+    "product_id": "1520",
+    "name": "Crisp & Airy Focaccia Mix Kit",
+    "url": "https://shop.kingarthurbaking.com/items/crisp-airy-focaccia-mix-kit",
+    "price": "7.95",
+    "rating": "4.3",
+    "review_count": "207",
+    "categories": [
+      "Mixes",
+      "Mixes/Bread",
+      "Mixes/Specialty",
+      "Mixes/Bread Mix Kits"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1520/5719/213188__55238.1724079471.jpg?c=1"
+  },
+  {
+    "product_id": "581",
+    "name": "Apple-Cinnamon Whole Grain Muffin and Quick Bread Mix",
+    "url": "https://shop.kingarthurbaking.com/items/apple-cinnamon-whole-grain-muffin-and-quick-bread-mix",
+    "price": "8.95",
+    "rating": "4.3",
+    "review_count": "438",
+    "categories": [
+      "Mixes",
+      "Mixes/Doughnuts & Muffins",
+      "special/B2B Wholesale Products",
+      "Mixes/Muffins & Quick Bread",
+      "select/Mix & Match Mixes"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/581/7340/100302_front__61148_3325__19100.1724079445.jpg?c=1"
+  },
+  {
+    "product_id": "1884",
+    "name": "Quick & Easy Panna Cotta Mix",
+    "url": "https://shop.kingarthurbaking.com/items/quick-and-easy-panna-cotta-mix",
+    "price": "14.95",
+    "rating": "4.9",
+    "review_count": "13",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Specialty",
+      "Collections/New Products",
+      "Collections/Valentine's Day"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1884/9430/400277_font__08226.1767118105.jpg?c=1"
+  },
+  {
+    "product_id": "548",
+    "name": "Cranberry-Orange Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/cranberry-orange-scone-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "1532",
+    "categories": [
+      "Collections/Best Sellers",
+      "Mixes",
+      "Collections/Pantry Starts Here",
+      "Mixes/Scones",
+      "Collections/Celebrate Breakfast",
+      "Collections/Scrumptious Scones",
+      "special/B2B Wholesale Products",
+      "select/Mix & Match Mixes"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/548/7173/100209__73660_3097__35536.1724079446.jpg?c=1"
+  },
+  {
+    "product_id": "552",
+    "name": "Lemon Blueberry Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/lemon-blueberry-scone-mix",
+    "price": "8.95",
+    "rating": "4.7",
+    "review_count": "1019",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Scones",
+      "Collections/Scrumptious Scones",
+      "special/B2B Wholesale Products",
+      "select/Mix & Match Mixes",
+      "Collections/Lemon Essence"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/552/7191/100213_front__75914_3328__79146.1724079450.jpg?c=1"
+  },
+  {
+    "product_id": "714",
+    "name": "Cherry Almond Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/cherry-almond-scone-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "1088",
+    "categories": [
+      "Collections/Best Sellers",
+      "Mixes",
+      "Mixes/Scones",
+      "Mixes/Seasonal",
+      "special/B2B Wholesale Products",
+      "select/Mix & Match Mixes",
+      "Collections/Valentine's Day"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/714/7834/207283__37520_3098__85455.1724079449.jpg?c=1"
+  },
+  {
+    "product_id": "585",
+    "name": "Gingerbread Cake & Cookie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/gingerbread-cake-cookie-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "1267",
+    "categories": [
+      "Mixes",
+      "Mixes/Cake & Pie",
+      "Collections/Cookie Creativity",
+      "Collections/Pantry Starts Here",
+      "Mixes/Cookies & Bars",
+      "special/B2B Wholesale Products",
+      "select/holiday helpers",
+      "select/Gingerbread",
+      "select/2 for $16 Cookies"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/585/7371/100313M403J_211574_TraditionalGingerbreadCakeCookie_0721-34__43900_3031__64245.1735930773.jpg?c=1"
+  },
+  {
+    "product_id": "561",
+    "name": "Deliciously Simple Chocolate Cake Mix",
+    "url": "https://shop.kingarthurbaking.com/items/deliciously-simple-chocolate-cake-mix",
+    "price": "8.95",
+    "rating": "4.9",
+    "review_count": "901",
+    "categories": [
+      "Mixes",
+      "Mixes/Cake & Pie",
+      "Collections/Cake Made Easy",
+      "select/Chocolate Love",
+      "special/B2B Wholesale Products",
+      "select/holiday helpers",
+      "Collections/Valentine's Day",
+      "Collections/Baking with Kids"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/561/7236/100228_front__49229_3284__84557.1740684461.jpg?c=1"
+  },
+  {
+    "product_id": "586",
+    "name": "Shortbread Cookie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/shortbread-cookie-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "762",
+    "categories": [
+      "Mixes",
+      "Mixes/Cookies & Bars",
+      "special/B2B Wholesale Products",
+      "Collections/St Patrick's Day",
+      "Collections/Valentine's Day",
+      "select/2 for $16 Cookies"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/586/7374/100316_front__31795_3398__07435.1735844996.jpg?c=1"
+  },
+  {
+    "product_id": "570",
+    "name": "All-American Fudge Brownie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/all-american-fudge-brownie-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "726",
+    "categories": [
+      "Mixes",
+      "Mixes/Cookies & Bars",
+      "Mixes/Seasonal",
+      "select/Celebration",
+      "select/Chocolate Love",
+      "special/B2B Wholesale Products",
+      "Collections/Valentine's Day",
+      "Collections/Baking with Kids",
+      "select/2 for $16 Cookies"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/570/7292/100254_front__90963_3308__98702.1724079451.jpg?c=1"
+  },
+  {
+    "product_id": "600",
+    "name": "Outrageous Chocolate Chip Cookie Mix",
+    "url": "https://shop.kingarthurbaking.com/items/outrageous-chocolate-chip-cookie-mix",
+    "price": "9.95",
+    "rating": "4.7",
+    "review_count": "726",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Cookies & Bars",
+      "special/B2B Wholesale Products",
+      "Collections/Baking with Kids"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/600/7429/101123_front__16027_3311__99859.1724079453.jpg?c=1"
+  },
+  {
+    "product_id": "544",
+    "name": "Blueberry Sour Cream Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/blueberry-sour-cream-scone-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "743",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Scones",
+      "Mixes/Seasonal",
+      "Collections/Scrumptious Scones",
+      "special/B2B Wholesale Products",
+      "select/Mix & Match Mixes",
+      "select/Spring Into savings"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/544/10034/100204_front__92456_3562__81270__42014.1779981100.jpg?c=1"
+  },
+  {
+    "product_id": "559",
+    "name": "Very Berry Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/very-berry-scone-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "696",
+    "categories": [
+      "Mixes",
+      "Collections/Summer Baking",
+      "Mixes/Scones",
+      "Mixes/Seasonal",
+      "Collections/Celebrate Breakfast",
+      "special/B2B Wholesale Products",
+      "select/Mix & Match Mixes",
+      "select/Breakfast"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/559/7222/100221_packagefront__56645_3297__79380.1724079439.jpg?c=1"
+  },
+  {
+    "product_id": "1204",
+    "name": "Diner-Style Pancake & Waffle Mix",
+    "url": "https://shop.kingarthurbaking.com/items/diner-style-pancake-waffle-mix",
+    "price": "6.95",
+    "rating": "4.8",
+    "review_count": "1080",
+    "categories": [
+      "Mixes",
+      "Mixes/Pancakes",
+      "Collections/Celebrate Breakfast",
+      "special/B2B Wholesale Products",
+      "select/Breakfast",
+      "Collections/Baking with Kids"
+    ],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/1204/4493/100283__04163.1724079466.jpg?c=1"
+  },
+  {
+    "product_id": "545",
+    "name": "Chocolate Chunk Scone Mix",
+    "url": "https://shop.kingarthurbaking.com/items/chocolate-chunk-scone-mix",
+    "price": "8.95",
+    "rating": "4.8",
+    "review_count": "659",
+    "categories": ["Mixes", "Mixes/Scones", "select/Mix & Match Mixes"],
+    "image_url": "https://cdn11.bigcommerce.com/s-ihwnd7z21q/images/stencil/500x659/products/545/7160/100206_packagefront__47804_3304__33155.1724079441.jpg?c=1"
+  }
+]
