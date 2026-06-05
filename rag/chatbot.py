@@ -1,8 +1,8 @@
+from prompts import build_prompt
+from local_llm import generate_answer
 import json
 import numpy as np
 import faiss
-from prompts import build_prompt
-from local_llm import generate_answer
 from sentence_transformers import SentenceTransformer
 
 # Functions
@@ -13,8 +13,6 @@ def build_context(
     return "\n\n".join(
         retrieved_documents
     )
-
-
 
 def retrieve_documents(
     user_question,
@@ -77,38 +75,37 @@ model = SentenceTransformer(
 
 print("Model Loaded")
 
-# Ask the user:
-
-user_question = input(
-    "\nAsk a question: "
-)
-
 TOP_K = 3
 
-retrieved_documents = retrieve_documents(
-    user_question,
-    TOP_K
-)
+while True:
+    user_question = input(
+        "\nAsk a question: "
+    )
 
-context = build_context(
-    retrieved_documents
-)
+    if user_question.lower() in [
+        "quit",
+        "exit"
+    ]:
+        print("Goodbye!")
+        break
 
-prompt = build_prompt(
-    user_question,
-    context
-)
+    retrieved_documents = retrieve_documents(
+        user_question,
+        TOP_K
+    )
 
-answer = generate_answer(
-    user_question,
-    context
-)
+    context = build_context(
+        retrieved_documents
+    )
 
-print("\nANSWER:\n")
-print(answer)
+    prompt = build_prompt(
+        user_question,
+        context
+    )
 
-print("\nQuestion:")
-print(user_question)
+    answer = generate_answer(
+        prompt
+    )
 
-print("\nRetrieved Context:")
-print(context)
+    print("\nANSWER:\n")
+    print(answer)

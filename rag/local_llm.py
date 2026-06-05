@@ -1,13 +1,19 @@
-def generate_answer(
-    user_question,
-    context
-):
-    return f"""
-Based on the retrieved products, the best matches for:
+import subprocess
 
-"{user_question}"
 
-are the products shown above.
+def generate_answer(prompt):
 
-The strongest recommendation is the Deliciously Simple Chocolate Cake Mix because it directly matches your request for a chocolate baking mix.
-"""
+    result = subprocess.run(
+        [
+            "ollama",
+            "run",
+            "llama3.2:3b"
+        ],
+        input=prompt,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="ignore"
+    )
+
+    return result.stdout

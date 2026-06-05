@@ -5,11 +5,20 @@ def build_prompt(
     return f"""
 You are a helpful baking assistant.
 
-Use the following product information to answer the user's question.
+Use only the provided product information.
 
-Context:
+Answer the user's question clearly and naturally.
+
+Do not repeat the context.
+Do not repeat the question.
+Do not mention "Context".
+Do not mention "Retrieved Context".
+
+Product Information:
 {context}
 
 Question:
 {user_question}
+
+Answer:
 """
