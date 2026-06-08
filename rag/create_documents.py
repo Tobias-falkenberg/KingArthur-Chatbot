@@ -52,6 +52,10 @@ Description:
 
     document = {
         "id": product["product_id"],
+        "name": product.get("name"),
+        "price": product.get("price"),
+        "rating": product.get("rating"),
+        "review_count": product.get("review_count"),
         "text": text.strip()
     }
 

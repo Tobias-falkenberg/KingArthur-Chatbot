@@ -1,111 +1,286 @@
-from prompts import build_prompt
-from local_llm import generate_answer
-import json
-import numpy as np
-import faiss
-from sentence_transformers import SentenceTransformer
+import os
+from sympy import product
 
-# Functions
+os.environ["NO_PROXY"] = "localhost,127.0.0.1"
+os.environ["no_proxy"] = "localhost,127.0.0.1"
 
-def build_context(
-    retrieved_documents
-):
-    return "\n\n".join(
-        retrieved_documents
-    )
+from data_loader import (
+    load_embeddings,
+    load_faiss_index,
+    load_embedding_model,
+    load_llm_chain,
+)
 
-def retrieve_documents(
-    user_question,
-    top_k=3
-):
-    query_embedding = model.encode(
-        user_question
-    )
+from product_service import (
+    list_products,
+    determine_scope,
+)
 
-    query_embedding = np.array(
-        [query_embedding],
-        dtype="float32"
-    )
+from rag_service import (
+    run_rag_pipeline
+)
 
-    distances, indices = index.search(
-        query_embedding,
-        top_k
-    )
+from intent_matcher import detect_intent
+from query_parser import parse_query
 
-    retrieved_documents = []
+from products_to_search import (
+    get_products_to_search
+)
 
-    for idx in indices[0]:
+from conversation_state import (
+    ConversationState
+)
 
-        retrieved_documents.append(
-            embeddings_data[idx]["text"]
+from intent_router import (
+    execute_intent
+)
+
+from followup_handler import (
+    is_followup_question,
+    handle_followup,
+)
+
+from product_query_handler import (
+    handle_list_products,
+    handle_cheapest_keyword_product,
+)
+
+from clarification_handler import (
+    needs_clarification,
+    build_clarification_message,
+)    
+
+TOP_K = 2
+state = ConversationState()
+
+# Load data
+embeddings_data = (
+    load_embeddings()
+)
+
+index = (
+    load_faiss_index()
+)
+
+model = (
+    load_embedding_model()
+)
+
+chain = (
+    load_llm_chain()
+)
+
+scope = None
+
+try:
+    
+    while True:
+        
+        user_question = input(
+            "\nAsk a question: "
+        )
+        user_question = user_question.strip()
+
+        if not user_question:
+
+            print(
+                "\nPlease enter a question."
+            )
+
+            continue
+
+        if user_question.lower() in [
+                "quit",
+                "exit"
+            ]:
+                print("Goodbye!")
+                break
+        
+        if state.is_awaiting_scope():
+
+            if user_question.lower() in [
+                "filtered",
+                "global"
+            ]:
+
+                scope = user_question.lower()
+
+                user_question = (
+                    state.get_pending_question()
+                )
+
+                state.set_awaiting_scope(
+                    False
+                )
+
+                state.set_pending_question(
+                    None
+                )
+
+            else:
+
+                print(
+                    "\nPlease type:"
+                    "\nfiltered"
+                    "\nor"
+                    "\nglobal"
+                )
+
+                continue
+                
+        parsed = parse_query(user_question)
+        
+        if scope is None:
+            
+            scope = determine_scope(
+                user_question
+            )
+
+        intent = parsed["intent"]
+
+        if intent is None:
+
+            intent, score = detect_intent(user_question)
+
+            if score < 0.60:
+                intent = None
+            
+        if (
+            state.get_last_product()
+            and is_followup_question(
+                user_question
+            )
+        ):
+
+            answer = handle_followup(
+                state,
+                chain,
+                user_question
+            )
+
+            print("\nANSWER:\n")
+            print(answer)
+
+            continue
+        
+        print(parsed)
+        
+        if (
+            parsed["intent"] == "list"
+            and parsed["keyword"]
+        ):
+
+            products = handle_list_products(
+                parsed,
+                embeddings_data,
+                state
+            )
+
+            print("\nPRODUCTS:\n")
+
+            list_products(products)
+
+            continue
+        
+        if (
+            parsed["intent"] == "cheapest"
+            and parsed["keyword"]
+        ):
+
+            product, answer = (
+                handle_cheapest_keyword_product(
+                    parsed,
+                    embeddings_data,
+                    state
+                )
+            )
+
+            print("\nANSWER:\n")
+            print(answer)
+
+            continue
+
+        if (
+            not scope
+            and needs_clarification(
+                user_question,
+                state.get_current_products()
+            )
+        ):
+
+            print(
+                build_clarification_message()
+            )
+
+            state.set_awaiting_scope(
+                True
+            )
+
+            state.set_pending_question(
+                user_question
+            )
+
+            continue
+
+        products_to_search = (
+            get_products_to_search(
+                scope,
+                state.get_current_products(),
+                embeddings_data
+            )
         )
 
-    return retrieved_documents
+        product, answer = execute_intent(
+            intent,
+            products_to_search
+        )
 
+        if product:
 
-# Load embeddings data:
+            state.set_last_product(
+                product
+            )
+            
+            print(
+                "DEBUG LAST PRODUCT:",
+                state.get_last_product()["name"]
+            )
+            
+            print("\nANSWER:\n")
+            print(answer)
 
-with open(
-    "data/processed/embeddings.json",
-    "r",
-    encoding="utf-8"
-) as f:
+            continue
 
-    embeddings_data = json.load(f)
+        answer = run_rag_pipeline(
+            user_question,
+            state,
+            model,
+            index,
+            embeddings_data,
+            chain,
+            TOP_K
+        )
 
-print(
-    f"Embeddings Loaded: {len(embeddings_data)}"
-)
+        print("\nANSWER:\n")
+        print(answer)
+        state.add_message(
+            "User",
+            user_question
+        )
 
-# Load FAISS:
+        state.add_message(
+            "Assistant",
+            answer
+        )
+        
+except KeyboardInterrupt:
 
-index = faiss.read_index(
-    "data/processed/faiss_index.bin"
-)
-
-print(
-    f"Vectors in Index: {index.ntotal}"
-)
-
-# Load model:
-
-model = SentenceTransformer(
-    "all-MiniLM-L6-v2"
-)
-
-print("Model Loaded")
-
-TOP_K = 3
-
-while True:
-    user_question = input(
-        "\nAsk a question: "
+    print(
+        "\n\nChatbot stopped by user."
     )
 
-    if user_question.lower() in [
-        "quit",
-        "exit"
-    ]:
-        print("Goodbye!")
-        break
+except Exception as e:
 
-    retrieved_documents = retrieve_documents(
-        user_question,
-        TOP_K
+    print(
+        f"\nUnexpected error: {e}"
     )
-
-    context = build_context(
-        retrieved_documents
-    )
-
-    prompt = build_prompt(
-        user_question,
-        context
-    )
-
-    answer = generate_answer(
-        prompt
-    )
-
-    print("\nANSWER:\n")
-    print(answer)

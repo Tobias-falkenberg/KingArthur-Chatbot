@@ -29,6 +29,10 @@ for document in documents:
     
     embeddings.append({
         "id": document["id"],
+        "name": document["name"],
+        "price": document["price"],
+        "rating": document["rating"],
+        "review_count": document["review_count"],
         "text": document["text"],
         "embedding": embedding.tolist()
     })
